@@ -5,7 +5,7 @@ I will do the same to mark the end of a session (evidence that i am keeping to t
 
 
 - [ ] Add tests to ensure functionality is not broken
-- [ ] Introduce interface to datastores
+- [x] Introduce interface to datastores
 - [ ] Add constructor to payment service and accept the datastore interface - the payment service shouldn't care or have knowledge of the datastore. If live changes are not needed than the datastore that's injected in can be determined at app startup. If the ability to switch is needed, a factory method can be used in the DI.
 - [ ] Tidy up/ abstract out the payment type validation. Fastest improvement would be to deduplicate the null account check. Another option involves payment type specific validators.
 - [ ] There is currently no guarding for null. Would ideally deal with this
