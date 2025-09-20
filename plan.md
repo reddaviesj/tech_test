@@ -7,7 +7,7 @@ I will do the same to mark the end of a session (evidence that i am keeping to t
 - [x] Add tests to ensure functionality is not broken
 - [x] Introduce interface to datastores
 - [x] Add constructor to payment service and accept the datastore interface - the payment service shouldn't care or have knowledge of the datastore. If live changes are not needed than the datastore that's injected in can be determined at app startup. If the ability to switch is needed, a factory method can be used in the DI.
-- [ ] Tidy up/ abstract out the payment type validation. Fastest improvement would be to deduplicate the null account check. Another option involves payment type specific validators.
+- [x] Tidy up/ abstract out the payment type validation. Fastest improvement would be to deduplicate the null account check. Another option involves payment type specific validators.
 - [ ] There is currently no guarding for null. Would ideally deal with this
 
 
@@ -18,6 +18,7 @@ Pausing at 20:40 - Outlines of tests written. Will need to move on to interface 
 Resuming 19:25
 Pausing at 20:30 - abstracted out datastores to allow testability.
 Resuming at 19:30
+Stopping at 19:59 - De-duplicated the account logic, and pulled out the payment scheme checks to private methods. For the time left this felt like a pragmatic improvement
 
 
 

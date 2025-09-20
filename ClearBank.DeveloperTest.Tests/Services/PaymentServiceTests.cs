@@ -200,6 +200,8 @@ public class PaymentServiceTests
     
     [Theory]
     [InlineData(10, 5, 5)]
+    [InlineData(5, 5, 0)]
+    [InlineData(5, 6, -1)]
     public void MakePayment_GivenBacsRequest_WhenRequestIsValid_AccountIsDebited(int accountBalance, int debitAmount, int expectedBalance)
     {
         const string debtorAccountNumber = "bacs-supported-account";
@@ -249,6 +251,7 @@ public class PaymentServiceTests
     
     [Theory]
     [InlineData(11, 5, 6)]
+    [InlineData(5, 5, 0)]
     public void MakePayment_GivenFasterPaymentsRequest_WhenRequestIsValid_AccountIsDebited(decimal accountBalance, decimal debitAmount, decimal expectedBalance)
     {
         const string debtorAccountNumber = "fasterpayments-supported-account";
@@ -298,6 +301,8 @@ public class PaymentServiceTests
     
     [Theory]
     [InlineData(10, 5, 5)]
+    [InlineData(5, 5, 0)]
+    [InlineData(5, 6, -1)]
     public void MakePayment_GivenChapsPaymentsRequest_WhenRequestIsValid_AccountIsDebited(decimal accountBalance, decimal debitAmount, decimal expectedBalance)
     {
         const string debtorAccountNumber = "chaps-supported-account";
