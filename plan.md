@@ -16,7 +16,8 @@ I will do the same to mark the end of a session (evidence that i am keeping to t
 Starting Test at 19:50
 Pausing at 20:40 - Outlines of tests written. Will need to move on to interface abstraction to make the tests actually useful and valid though, as I need a way to mock the behaviour.
 Resuming 19:25
-Pausing at 20:30 - abstracted out datastores to allow testability. 
+Pausing at 20:30 - abstracted out datastores to allow testability.
+Resuming at 19:30
 
 
 
